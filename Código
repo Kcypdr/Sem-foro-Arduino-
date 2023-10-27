@@ -1,0 +1,27 @@
+// Configuração inicial - Define os pinos como saída
+void setup() {
+  pinMode(13, OUTPUT); // Pino do LED Vermelho
+  pinMode(12, OUTPUT); // Pino do LED Amarelo
+  pinMode(11, OUTPUT); // Pino do LED Verde
+}
+
+// Loop principal - Controla os LEDs
+void loop() {
+  // Acende o LED Vermelho e apaga os outros
+  digitalWrite(13, HIGH);
+  digitalWrite(12, LOW);
+  digitalWrite(11, LOW);
+  delay(5000); // Aguarda 5 segundos
+
+  // Acende o LED Amarelo e apaga os outros
+  digitalWrite(13, LOW);
+  digitalWrite(12, HIGH);
+  digitalWrite(11, LOW);
+  delay(2000); // Aguarda 2 segundos
+
+  // Acende o LED Verde e apaga os outros
+  digitalWrite(13, LOW);
+  digitalWrite(12, LOW);
+  digitalWrite(11, HIGH);
+  delay(5000); // Aguarda 5 segundos
+}
